@@ -21,4 +21,15 @@ else if(n%2==0||n%3==0||n%4==0||n%5==0)
 }
 else Console.WriteLine("Tub son...");
 
-//
+//Bo'luvchisiz sonlar
+int k;
+Console.Write("Son kiriting=> ");
+k=Convert.ToInt32(Console.ReadLine());
+for(int i=2; i<k; i++)
+{
+    if(k%i==0)
+    {
+        Console.WriteLine(i);
+    }
+
+}
