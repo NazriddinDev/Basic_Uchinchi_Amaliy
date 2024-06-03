@@ -33,3 +33,11 @@ for(int i=2; i<k; i++)
     }
 
 }
+
+// Daraja hisoblash
+int a,b;
+Console.Write("Son kiriting=> ");
+a=Convert.ToInt32(Console.ReadLine());
+Console.Write("darajani kiriting=> ");
+b=Convert.ToInt32(Console.ReadLine());
+System.Console.WriteLine($"Natija=> {Math.Pow(a,b)}");
