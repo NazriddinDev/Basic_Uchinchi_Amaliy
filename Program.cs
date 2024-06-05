@@ -41,3 +41,19 @@ a=Convert.ToInt32(Console.ReadLine());
 Console.Write("darajani kiriting=> ");
 b=Convert.ToInt32(Console.ReadLine());
 System.Console.WriteLine($"Natija=> {Math.Pow(a,b)}");
+
+// Hujjatlar to'plamini hisoblash
+int c, S=0;
+Console.Write("To'plam sonini kiriting=> ");
+c = int.Parse(Console.ReadLine());
+int q = c;
+int[] toplam= new int[c];
+for(int i=0; i<c; i++)
+{
+    Console.Write($"Siz {q} ta top'lam kiritishingiz kerak=> ");
+    toplam[i]=int.Parse(Console.ReadLine());
+    S+=toplam[i];
+    q--;
+}
+System.Console.WriteLine($"{c} ta to'plamlar yig'indisi=> {S}");
+
