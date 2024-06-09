@@ -57,34 +57,48 @@
 // }
 // Console.WriteLine($"{c} ta to'plamlar yig'indisi=> {S}");
 
-// Armstrong sonlar
-int b, f, j, k, l, m, i=0;
-double S;
-Console.Write("Armstrong sonni kiriting=> ");
-j=Convert.ToInt32(Console.ReadLine());
-k=j;
-do
-{
-    k = k/10;
-    i++ ;
-}
-while(k>9);
-    Console.WriteLine($"Kiritilgan son {++i} xonali...");
-   if(i==3)
-   {
-        l=j%10;
-        m=j/10;
-        f=m%10;
-        b =m/10;
-        S=Math.Pow(b,i)+Math.Pow(f,i)+Math.Pow(l,i);
-        Console.WriteLine($"S= {S}");
-        if(S==j)
-        {
-            Console.WriteLine("Armstrong son...");
-        }
-        else
-        {
-            Console.WriteLine("Armstrong son emas...");
+// // Armstrong sonlar
+// int b, f, j, k, l, m, i=0;
+// double S;
+// Console.Write("Armstrong sonni kiriting=> ");
+// j=Convert.ToInt32(Console.ReadLine());
+// k=j;
+// do
+// {
+//     k = k/10;
+//     i++ ;
+// }
+// while(k>9);
+//     Console.WriteLine($"Kiritilgan son {++i} xonali...");
+//    if(i==3)
+//    {
+//         l=j%10;
+//         m=j/10;
+//         f=m%10;
+//         b =m/10;
+//         S=Math.Pow(b,i)+Math.Pow(f,i)+Math.Pow(l,i);
+//         Console.WriteLine($"S= {S}");
+//         if(S==j)
+//         {
+//             Console.WriteLine("Armstrong son...");
+//         }
+//         else
+//         {
+//             Console.WriteLine("Armstrong son emas...");
 
+//         }
+//    }
+
+   //Sifatli bo'luvchilar
+   int w, k=0;
+   System.Console.Write("Sonni kiriting=> ");
+   w=Convert.ToInt32(Console.ReadLine());
+   for(int i=1;i<w;i++)
+   {
+        if(w%i==0)
+        {
+            Console.WriteLine($"{w} sonining sifatli bo'luvchilaridan biri {i} ");
+            k++;
         }
    }
+        Console.Write($"{w} sonining sifatli bo'luvchilari soni {k} ta... ");
